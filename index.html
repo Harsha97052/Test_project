@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CHEMISTRY</title>
+        <link rel="icon" href="logomom.PNG">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Toto:wght@600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        body {
+            background-image:url("https://png.pngtree.com/back_origin_pic/04/48/50/84cd2a9fbc6cbd5522b2f048a56703a8.jpg") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Monoton', cursive;
+            color: DarkSlateGrey;
+        }
+        hr {
+            width:25%;
+        }
+        h2 {
+            text-align: center;
+            font-family: 'Sigmar One', cursive;
+            color: DarkRed;
+        }
+        p {
+            text-align: center;
+        }
+        .formula {
+            font-size: 140%;
+            text-align: center;
+            line-height: 2px;
+        }
+        .reaction {
+            margin-left: 360px;
+            color:SteelBlue;
+            font-family: 'Noto Serif Toto', serif;
+        }
+        .answers {
+            margin-left: 180px;
+        }
+        .elements {
+            border:2px solid black;
+            border-radius: 4px;
+            width:22%;
+            height:30px;
+            vertical-align: center;
+            line-height: 30px;
+            margin:1px auto 1px auto;
+            font-family: 'Sofia Sans Condensed', sans-serif;
+        }
+        .concentration {
+            font-size: 140%;
+        }
+        .answers {
+            color:ForestGreen;
+            font-family: 'Sofia Sans Condensed', sans-serif;
+        }
+        div.section {
+            border:2px dashed black;
+            border-radius: 4px;
+            padding:4px;
+            margin: 8px auto 8px auto;
+            width:50%;
+            background-color:AliceBlue;
+        }
+        span {
+            color:SteelBlue;
+        }
+        .form {
+             margin:0px 0px 0px 470px;
+             border:1px solid black;
+             border-radius: 4px;
+             width:32%;
+             padding: 2px;
+             background-color: aliceblue;
+             font-size:140%;
+             font-family: Arial, Helvetica, sans-serif;
+             color:brown;
+        }
+       
+    </style>
+    <body>
+        <h1>Welcome to our Website</h1>
+        <hr>
+        <h2>Chemical Reactions</h2>
+        <hr>
+        <div>
+        <p class="formula" id="new">N​<sub>2</sub>g+3H<sub>2</sub>g <img src="https://symbols.getvecta.com/stencil_133/1_left-right-black-arrow.8fcab3a414.png" id="for" width="42px" height="20px"> 2NH<sub>3</sub>g​</p>
+        <button class="reaction" type="button" onclick="document.getElementById('for').src='https://www.freepnglogos.com/uploads/arrow-symbol-png/arrow-symbol-arrow-transparent-png-image--34.png'">Forward Reaction</button>
+        <button class="reaction" type="button" onclick="document.getElementById('for').src='right.png'">Backward Reaction</button>
+        </div>
+        <div class="section" >
+            <p class="elements">Reactants & products</p>
+            <p class="concentration">Forward Reaction : N​<sub>2</sub>g+3H<sub>2</sub>g <img src="https://www.freepnglogos.com/uploads/arrow-symbol-png/arrow-symbol-arrow-transparent-png-image--34.png" width="35px" height="20px"> 2NH<sub>3</sub>g</p>
+            <button class="answers" type="button" onclick="document.getElementById('forreact').innerHTML='<span><b><u>Reactants</u> :</b></span>  N - Nitrogen + H - Hydrogen'">Reactants</button>
+            <button class="answers" type="button" onclick="document.getElementById('forpro').innerHTML='<span><b><u>Products</u> :</b></span> NH<sub>3</sub> - Ammonia'">Products</button>
+            <p><span id="forreact"></span> <span id="forpro"></span></p>
+            <p class="concentration">Backward Reaction : N​<sub>2</sub>g+3H<sub>2</sub>g <img src="right.png" id="for" width="35px" height="20px"> 2NH<sub>3</sub>g</p>
+            <button class="answers" type="button" onclick="document.getElementById('backreact').innerHTML='<span><b><u>Reactants</u> :</b></span> NH<sub>3</sub> - Ammonia '">Reactants</button>
+            <button class="answers" type="button" onclick="document.getElementById('backpro').innerHTML='<span><b><u>Products</u> :</b></span> N - Nitrogen + H - Hydrogen'">Products</button>
+            <p><span id="backreact"></span> <span id="backpro"></span></p>
+        </div>
+        <form action="submit.html">
+            <div class="form">
+                Named reactions:<input type="text,number" required/>
+                <input type="submit" value="Submit">
+            </div>  
+        </form>
+    </body>    
+</html>
